@@ -72,10 +72,38 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        border: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        border: 'border 4s ease infinite',
+      },
+      backgroundImage: {
+        "ecosystem-gradient":
+          "radial-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.37),rgba(255, 255, 255, 1))",
+        "more-than-platform-gradient":
+          " linear-gradient(210deg, rgba(144,87,226,1) 31%, rgba(204,104,236,1) 63%, rgba(204,104,236,0.9641106442577031) 81%, rgba(255,255,255,1) 100%)",
+        "circle-blur-gradient":
+          "radial-gradient(rgba(64, 83, 255, 1),rgba(201, 206, 255, 0.42),rgba(255, 255, 255, 0))",
+        "logos-tail-gradient-mid":
+          "linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0))",
+        "logos-tail-gradient-third":
+          "linear-gradient(rgba(255, 255, 255, 0.21),rgba(255, 255, 255, 0))",
+        "all-tabs-gradient":
+          "angular-gradient(rgba(249, 142, 218, 1),rgba(121, 108, 220, 1),rgba(61, 230, 211, 1),rgba(73, 146, 208, 1))",
+        "traditional-app-ecosystem-gradient":
+          "linear-gradient(rgba(136, 88, 224, 1),rgba(202, 84, 234, 1),rgba(208, 173, 236, 1) )",
+        "properX-ecosystem-gradient":
+          "radial-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.27),rgba(255, 255, 255, 0))",
+
+      },
+      rotate: {
+        '-9': '-9deg',
       },
     },
   },
