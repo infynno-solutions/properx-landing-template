@@ -74,3 +74,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+.react__player > video {
+  max-width: none;
+  border-radius: 1.5rem;
+  height: 100%;
+}

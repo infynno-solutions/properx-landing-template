@@ -32,6 +32,8 @@ const config = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          background: "#F6F6F6",
+          900: "#8958E1",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -63,6 +65,16 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      spacing: {
+        2.5: "10px",
+        7.5: "30px",
+        13: "52px",
+        35: "140px",
+      },
+      gap: {
+        0.5: "2px",
+        2.5: "10px",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -72,10 +84,34 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        marquee: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        "marquee-reverse": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        marquee: "marquee linear infinite",
+        "marquee-reverse": "marquee-reverse linear infinite",
+      },
+      backgroundImage: {
+        "gradients-primary": "linear-gradient(90deg, #5E49FE 0%, #C377F3 100%)",
+        "primary-linear":
+          "linear-gradient(240.94deg, #8F5BE3 -16.55%, #CE6FED 31.67%, #FFFFFF 122.52%)",
+        "primary-radial":
+          "radial-gradient(50% 50% at 50% 50%, rgba(217, 217, 217, 0) 70.15%, #FFFFFF 100%)",
+      },
+      boxShadow: {
+        main: "0px 0px 80px 0px #0000001A;",
+        icon: "5px 4px 6px 0px #00000026;",
+      },
+      scale: {
+        60: "60%",
       },
     },
   },
